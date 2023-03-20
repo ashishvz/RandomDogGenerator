@@ -22,10 +22,10 @@ val localDataSourceModule = module {
         val file = File(androidApplication().cacheDir, Constants.CACHE_FILE_NAME)
         if (file.exists()) {
             val inputStream = ObjectInputStream(FileInputStream(file))
-            val snapshot = inputStream.readObject() as LinkedHashMap<*, *>
+            val snapshot = inputStream.readObject() as LinkedHashMap<Long, String>
             cache.evictAll()
             snapshot.map {
-                cache.put(it.key as Long?, it.value as String?)
+                cache.put(it.key, it.value)
             }
         }
         cache
