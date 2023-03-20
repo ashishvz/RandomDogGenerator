@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/baseFragment">
+
+    <fragment
+        android:id="@+id/baseFragment"
+        android:name="com.ashishvz.dogimage.ui.fragments.BaseFragment"
+        android:label="BaseFragment"
+        tools:layout="@layout/base__layout">
+        <action
+            android:id="@+id/action_baseFragment_to_getPreviousImageFragment"
+            app:destination="@id/getPreviousImageFragment" />
+        <action
+            android:id="@+id/action_baseFragment_to_generateImageFragment"
+            app:destination="@id/generateImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generateImageFragment"
+        android:name="com.ashishvz.dogimage.ui.fragments.GenerateImageFragment"
+        android:label="GenerateImageFragment"
+        tools:layout="@layout/fragment_generate_image"/>
+    <fragment
+        android:id="@+id/getPreviousImageFragment"
+        android:name="com.ashishvz.dogimage.ui.fragments.GetPreviousImageFragment"
+        android:label="GetPreviousImageFragment"
+        tools:layout="@layout/fragment_get_previous_images"/>
+</navigation>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Random Dog Generator</string>
+    <string name="no_data_found_please_regenerate_the_images">No data found! Please regenerate the images</string>
+    <string name="click_below_button_to_generate_image">Click below button to generate image!</string>
+    <string name="generate_dogs">Generate Dogs!</string>
+    <string name="my_recently_generated_dogs">My Recently Generated Dogs!</string>
+    <string name="generate">Generate!</string>
+    <string name="clear_dogs">Clear Dogs!</string>
+</resources>
